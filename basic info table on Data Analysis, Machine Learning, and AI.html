@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Path Table</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #007BFF;
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #007BFF;
+      color: #fff;
+      font-weight: 500;
+    }
+    td {
+      background-color: #f9f9f9;
+    }
+    tr:hover td {
+      background-color: #f1f1f1;
+    }
+    .link-btn {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .link-btn:hover {
+      text-decoration: underline;
+    }
+    .resources {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .resources li {
+      margin-bottom: 5px;
+    }
+    .resources a {
+      color: #333;
+      text-decoration: none;
+    }
+    .resources a:hover {
+      color: #007BFF;
+    }
+    .container-responsive {
+      overflow-x: auto;
+    }
+    @media (max-width: 768px) {
+      th, td {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Learning Path Table</h1>
+  <div class="container-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Topic</th>
+          <th>Core Skills/Concepts</th>
+          <th>Tools/Libraries</th>
+          <th>Resources</th>
+          <th>YouTube</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Data Analysis</td>
+          <td>1.1. Basics of Data Analysis</td>
+          <td>Data Collection, Data Cleaning, EDA, Descriptive Statistics</td>
+          <td>Python (pandas, numpy), SQL</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Python for Data Analysis by Wes McKinney</a></li>
+              <li><a href="#">Data Science Crash Course (Kaggle)</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/@careerfoundry">CareerFoundry</a></td>
+        </tr>
+        <tr>
+          <td>1. Data Analysis</td>
+          <td>1.2. Data Visualization</td>
+          <td>Visualizing data, storytelling with data, bar charts, scatter plots, histograms</td>
+          <td>Matplotlib, Seaborn, Tableau, Power BI, Looker studio</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Storytelling with Data by Cole Nussbaumer Knaflic</a></li>
+              <li><a href="#">Data Visualization with Python</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/@VismeApp">VismeApp</a></td>
+        </tr>
+        <tr>
+          <td>2. Machine Learning</td>
+          <td>2.1. Basics of Machine Learning</td>
+          <td>Supervised Learning (regression, classification), Unsupervised Learning (clustering), Model Evaluation (cross-validation, accuracy, precision)</td>
+          <td>Python (scikit-learn), Jupyter Notebooks</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron</a></li>
+              <li><a href="#">Machine Learning by Andrew Ng (Coursera)</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=ukzFI9rgwfU">Andrew Ng</a></td>
+        </tr>
+        <tr>
+          <td>2. Machine Learning</td>
+          <td>2.2. Advanced Machine Learning</td>
+          <td>Feature Engineering, Hyperparameter Tuning, Random Forests, Gradient Boosting, SVM</td>
+          <td>scikit-learn, XGBoost, LightGBM</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Advanced Topics)</a></li>
+              <li><a href="#">Kaggle Competitions</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=i_LwzRVP7bg">Kaggle Competitions</a></td>
+        </tr>
+        <tr>
+          <td>2. Machine Learning</td>
+          <td>2.3. Deep Learning</td>
+          <td>Neural Networks (Feedforward, Backpropagation), CNNs, RNNs, LSTMs, GANs</td>
+          <td>TensorFlow, Keras, PyTorch</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Deep Learning with Python by François Chollet</a></li>
+              <li><a href="#">Deep Learning Specialization (Coursera)</a></li>
+              <li><a href="#">fast.ai Deep Learning</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=VyWAvY2CF9c">Deep Learning Specialization</a></td>
+        </tr>
+        <tr>
+          <td>3. Artificial Intelligence</td>
+          <td>3.1. Introduction to AI Concepts</td>
+          <td>AI overview, Machine Learning, Computer Vision, NLP, Reinforcement Learning</td>
+          <td>Python (TensorFlow, PyTorch, OpenAI Gym)</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Artificial Intelligence: A Modern Approach by Stuart Russell & Peter Norvig</a></li>
+              <li><a href="#">AI for Everyone (Coursera)</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=G2fqAlgmoPo">AI Overview</a></td>
+        </tr>
+        <tr>
+          <td>3. Artificial Intelligence</td>
+          <td>3.2. Natural Language Processing (NLP)</td>
+          <td>Text Preprocessing, TF-IDF, Word2Vec, Sentiment Analysis, Named Entity Recognition (NER), Transformers (BERT, GPT)</td>
+          <td>spaCy, NLTK, Hugging Face Transformers</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Speech and Language Processing by Daniel Jurafsky and James H. Martin</a></li>
+              <li><a href="#">Practical Natural Language Processing by Sowmya Vajjala</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=fNxaJsNG3-s&list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S">NLP Playlist</a></td>
+        </tr>
+        <tr>
+          <td>3. Artificial Intelligence</td>
+          <td>3.3. Reinforcement Learning</td>
+          <td>Markov Decision Process (MDP), Q-Learning, Deep Q Networks (DQN), Policy Gradient Methods</td>
+          <td>OpenAI Gym, TensorFlow, PyTorch</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Reinforcement Learning: An Introduction by Sutton & Barto</a></li>
+              <li><a href="#">Reinforcement Learning Specialization (Coursera)</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=TCCjZe0y4Qc&list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm&index=1">Reinforcement Learning Playlist</a></td>
+        </tr>
+        <tr>
+          <td>3. Artificial Intelligence</td>
+          <td>3.4. AI Ethics & Deployment</td>
+          <td>AI Ethics, Model Deployment (Docker, Flask, FastAPI)</td>
+          <td>Docker, Flask, FastAPI</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">AI Superpowers by Kai-Fu Lee</a></li>
+              <li><a href="#">Machine Learning Engineering (Coursera)</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.youtube.com/watch?v=VqFqWIqOB1g">AI Ethics & Deployment</a></td>
+        </tr>
+        <tr>
+          <td>4. Practice & Projects</td>
+          <td>4.1. Kaggle Competitions</td>
+          <td>Apply ML techniques to real-world datasets, solve competitive problems</td>
+          <td>Kaggle, Python</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Kaggle Competitions</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://www.kaggle.com/">Kaggle</a></td>
+        </tr>
+        <tr>
+          <td>4. Practice & Projects</td>
+          <td>4.2. GitHub Projects</td>
+          <td>Share your code, work on open-source ML/AI projects, build a portfolio</td>
+          <td>GitHub, Jupyter Notebooks, Python</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Create your own GitHub repositories, contribute to open-source projects</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://github.com/">GitHub</a></td>
+        </tr>
+        <tr>
+          <td>4. Practice & Projects</td>
+          <td>4.3. Personal Projects</td>
+          <td>Build real-world projects (e.g., recommendation system, chatbots, predictive models)</td>
+          <td>Python, Jupyter Notebooks, TensorFlow, PyTorch</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Personal projects based on real-world applications</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="#">Personal Projects</a></td>
+        </tr>
+        <tr>
+          <td>4. Practice & Projects</td>
+          <td>4.4. Contributing to Open Source</td>
+          <td>Contribute to AI/ML open-source projects, improve coding practices</td>
+          <td>GitHub, Python, TensorFlow, PyTorch</td>
+          <td>
+            <ul class="resources">
+              <li><a href="#">Contribute to GitHub repositories in ML/AI</a></li>
+            </ul>
+          </td>
+          <td><a class="link-btn" href="https://github.com/">GitHub</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
